@@ -16,7 +16,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 
 }
 
@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 /* в шапке кнопки навигации*/
 .list {
   display: flex;
+  justify-content: center;
+}
+.list .list-item + .list-item {
+  margin-left: 8px;
 }
 
 .list .nav-item + .nav-item {
@@ -334,6 +338,7 @@ background-color: var(--focus-button-color);
 .comand-list {
   display: flex;
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .comand-item {
@@ -374,7 +379,7 @@ background-color: var(--focus-button-color);
 
 
 .footer-container {
-  margin-top: 94px;
+  /* margin-top: 94px; */
 
 }
 
@@ -480,6 +485,32 @@ padding-top: 60px;
 }
 
 /* галерея - примеры работ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-list {
+  margin-top: 34px;
+  width: calc((100%-60px)/3);
+
+
+  /* outline: 2px solid green; */
+}
+
+.gallery-list:nth-child(3n) { 
+  margin-right: 0;
+}
+/* .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;  
+}
+
+.gallery-list {
+  margin: 15px;
+  width: 370px;
+} */
 
 .gallery-image {
   width: 370px;
@@ -487,6 +518,9 @@ padding-top: 60px;
 }
 
 .gallery-caption {
+  padding-top: 20px;
+  padding-left: 24px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -495,9 +529,14 @@ padding-top: 60px;
 }
 
 .gallery-text {
+padding-top: 4px;
+padding-left: 24px;
+
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
+
