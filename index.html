@@ -13,39 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+<!-- нормализация стилей -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- мой шрифт -->
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
     <!-- Шапка -->
-    <header class="Header">
-      <!-- лого -->
-      <nav class="nav-list">
-        <a class="logo" href=""><span class="logo-link">Web</span><span class="logo-link-header"></span>Studio</a>
+    
+    <header class="header">
+      <div class="container">
+                  
 
-        <!-- кнопки навигации  -->
-        <ul class="list">
-          <li class="nav-item">
-            <a class="list-link-index" href="./index.html">Студия</a>
+        <!-- лого -->
+        <nav class="nav-list">
+          <a class="logo" href=""><span class="logo-link">Web</span><span class="logo-link-header"></span>Studio</a>
+          <!-- кнопки навигации  -->
+          <ul class="list">
+            <li class="nav-item">
+              <a class="list-link-index" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="list-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item"><a class="list-link" href="">Контакты</a></li>
+          </ul>
+        
+  
+        <ul class="address">
+          <li class="address-item">
+            <a class="address-link" lang="en" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="list-link" href="./portfolio.html">Портфолио</a>
+          <li class="address-item">
+            <a class="address-link-tel" href="tel:+380961111111">+380961111111</a>
           </li>
-          <li class="nav-item"><a class="list-link" href="">Контакты</a></li>
         </ul>
       </nav>
-
-      <ul class="address">
-        <li class="address-item">
-          <a class="address-link" lang="en" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="address-item">
-          <a class="address-link" href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
+                
+      </div>
     </header>
 
     <!-- уникальная часть -->
@@ -54,15 +65,20 @@
       <!-- уникальная часть Hero -->
 
       <section class="hero">
-        <!-- span-ом нужно указать цвет букв белый -->
-        <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+<div class="container">
+  <!-- span-ом нужно указать цвет букв белый -->
+  <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+  <button class="hero-button" type="button">Заказать услугу</button>
+</div>
+        
       </section>
 
       <!-- преимущества Benefits компании -->
       
       <section class="benefits">
-        <h2 class="hidden-benefits">Преимущества компании</h2>
+
+        <div class="container">
+          <h2 class="hidden-benefits">Преимущества компании</h2>
         <ul>
           <li>
             <h3 class="benefits-title">Внимание к деталям</h3>
@@ -93,43 +109,51 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
+
+
       <!-- Чем мы занимаемся -->
       <section class="main">
-        <h2 class="main-content-caption">Чем мы занимаемся</h2>
-
-        <ul>
-          <li>
-            <img
-              class="main-content-pic"
-              src="./images/images/manage.jpg"
-              alt="Управляем"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              class="main-content-pic"
-              src="./images/images/planning.jpg"
-              alt="планируем"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              class="main-content-pic"
-              src="./images/images/project.jpg"
-              alt="проэктируем"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        
+        <div class="container">
+          <h2 class="main-content-caption">Чем мы занимаемся</h2>
+  
+          <ul>
+            <li>
+              <img
+                class="main-content-pic"
+                src="./images/images/manage.jpg"
+                alt="Управляем"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                class="main-content-pic"
+                src="./images/images/planning.jpg"
+                alt="планируем"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                class="main-content-pic"
+                src="./images/images/project.jpg"
+                alt="проэктируем"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul></div>
       </section>
       <!-- Наша команда -->
       <section class="comand">
+
+        <div class="container">
+          
         <h2 class="main-content-caption">Наша команда</h2>
 
         <ul>
@@ -179,11 +203,15 @@
             <p class="main-content-text" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!-- подвал -->
     <footer class="footer">
+
+<div class="container">
+
       <a class="footer-logo-link" href=""
         ><span class="logo-link">Web</span><span class="logo-link-footer">Studio</span></a>
 
@@ -197,6 +225,7 @@
         <a class="footer-address-tel" href="tel:+380961111111"
           >+380961111111</a>
       </address>
+    </div>
     </footer>
   </body>
 </html>

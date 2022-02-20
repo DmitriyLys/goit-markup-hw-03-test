@@ -9,6 +9,16 @@
   --comand-color: #f5f4fa;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -37,6 +47,10 @@ a {
   color: var(--primary-text-color);
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* скрытие заголовка Преимущества Benefits компании */
 .hidden-benefits {
   position: absolute;
@@ -51,9 +65,24 @@ a {
   overflow: hidden;
 }
 
-/* лого в шапке */
+/* шапка */
 
-/* web  */
+
+.nav-list {
+  display: flex;
+
+}
+/* лого в шапке */
+.logo {
+  margin-right: 93px;
+
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+/* logo */
 .logo-link {
   color: var(--focus-button-color);
   font-size: 26px;
@@ -69,28 +98,25 @@ a {
   /* цвет шрифта не понятно какой пока !!!!!!!!!!!!!!!!!! */
 }
 
-/* лого в фуктере */
-
-.logo,
-.footer-logo-link {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo-link-footer {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo-link-footer {
-  color: var(--button-text-color);
-}
 /* в шапке кнопки навигации*/
+.list {
+  display: flex;
+}
+
+.list .nav-item + .nav-item {
+  margin-left: 50px;
+
+}
+
+/* address header */
+
+.address {
+  display: flex;
+  margin-right: auto;
+  margin-left: 331px;
+
+
+}
 
 .list-link {
   font-weight: 500;
@@ -255,6 +281,28 @@ a {
 
 /* подвал */
 
+
+/* лого в фуктере */
+
+
+.footer-logo-link {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-link-footer {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-link-footer {
+  color: var(--button-text-color);
+}
 .footer-address {
   position: bottom;
   width: 231px;
@@ -333,6 +381,7 @@ a {
   width: 370px;
   height: 294px;
 }
+
 .gallery-caption {
   font-style: normal;
   font-weight: 700;
