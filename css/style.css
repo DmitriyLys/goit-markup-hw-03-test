@@ -311,14 +311,40 @@ background-color: var(--focus-button-color);
 
 /* Наша команда */
 
+.comand-container {
+  margin-top: 94px;
+}
+
+
 .comand {
   background-color: var(--comand-color);
 }
 .main-content-caption {
+  padding-top: 94px;
+
+
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+}
+
+.comand-list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.comand-item {
+
+
+}
+.comand-list .comand-item + .comand-item {
+  margin-left: 30px;
+}
+
+.main-content-title, .main-content-text {
   text-align: center;
 }
 
@@ -347,10 +373,20 @@ background-color: var(--focus-button-color);
 /* подвал */
 
 
+.footer-container {
+  margin-top: 94px;
+
+}
+
 /* лого в фуктере */
 
 
 .footer-logo-link {
+display: flex;
+padding-top: 60px;
+
+
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -369,6 +405,9 @@ background-color: var(--focus-button-color);
   color: var(--button-text-color);
 }
 .footer-address {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  
   position: bottom;
   width: 231px;
 }
