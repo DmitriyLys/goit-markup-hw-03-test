@@ -118,8 +118,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* address header */
 
-.header-container {
- 
+.header {
+  border: 1px solid  #ECECEC;
+  background-color: var(--button-text-color);
 }
 
 .address {
@@ -191,6 +192,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .hero-text {
+
+
+
   color: var(--button-text-color);
 }
 .hero-button {
