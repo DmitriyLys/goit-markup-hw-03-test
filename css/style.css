@@ -72,10 +72,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
   align-items: center;
 
+
+}
+.list-link-index .list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* лого в шапке */
 .logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
 
   font-family: Raleway, sans-serif;
