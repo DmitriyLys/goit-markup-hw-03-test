@@ -1,4 +1,5 @@
 /* переменные */
+/* переменные */
 
 :root {
   --primary-text-color: #212121;
@@ -118,9 +119,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* address header */
 
-.header {
-  border: 1px solid  #ECECEC;
-  background-color: var(--button-text-color);
+.header-container {
+ 
 }
 
 .address {
@@ -192,13 +192,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .hero-text {
-
-
-
-  color: var(--button-text-color);
+padding-top: 200px;
+margin-left: auto;
+margin-right: auto;
+color: var(--button-text-color);
 }
+
 .hero-button {
-  background-color: var(--focus-button-color);
+margin-top: 30px;
+margin-bottom: 200px;
+
+
+background-color: var(--focus-button-color);
   color: var(--button-text-color);
   font-weight: 700;
   font-size: 16px;
@@ -231,6 +236,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* преимущества Benefits компании */
 
+.benefits-list {
+  display: flex;
+  margin-top: 94px;
+
+}
+
 .benefits-title {
   font-style: normal;
   font-weight: 700;
@@ -239,6 +250,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   text-transform: uppercase;
 }
 .benefits-text {
+  padding-top: 10px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -246,14 +259,49 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   color: var(--secondary-text-color);
 }
 
+.benefits-list .benefits-item + .benefits-item {
+  margin-left: 30px;
+}
+
 /* Чем мы занимаемся */
 
+.main-container {
+  margin-top: 94px;
+}
+
 .main-content-caption {
+
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.content-pic {
+  display: flex;
+
+}
+
+.content-pic-item {
+  display: flex;
+  margin-left: 30px;
+
+}
+.content-pic-item:first-child {
+  margin-left: 0;
+}
+
+/* .content-pic-item {
+  margin-right: 30px;
+}
+.content-pic-item:last-child {
+  margin-right: 0;
+} */
+
+
+.content-pic-item .main-content-pic + .main-content-pic {
+  margin-left: 30px;
 }
 
 .main-content-pic {
@@ -414,6 +462,3 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
-
-
-
